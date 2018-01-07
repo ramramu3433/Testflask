@@ -8,5 +8,11 @@ pipeline{
          
    checkout scm
       }}
+   stage('Echo')
+      {
+         steps
+         {
+            echo 'Success'}
+      }
    }
    }
