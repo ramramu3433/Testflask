@@ -26,7 +26,7 @@ render_template('file','variables')
 
 {{ }} -> to add variable
 {% %} -> code in jinja templating 
-
+Added Hook sample
 @app.route()
 
 
