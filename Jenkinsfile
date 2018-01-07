@@ -12,7 +12,7 @@ pipeline{
       {
          steps
          {
-            echo 'Success'}
+            decho 'Success'}
       }
    }
    }
