@@ -8,11 +8,25 @@ pipeline{
          
    checkout scm
       }}
-   stage('Echo')
+   stage('Build')
       {
          steps
          {
-            decho 'Success'}
+           pip install -r requirements.txt
+           
       }
    }
+      stage('Test')
+      {
+         steps{
+            python -m test
+         }
+   }
+      stage('Notification')
+      {
+         steps
+         {
+            echo 'This is some notification step'
+         }
+      }
    }
