@@ -23,7 +23,7 @@ pipeline{
       {
          steps
          {
-     sh  echo 'This is some notification step'
+     echo 'This is some notification step'
          } }
    }
 }
