@@ -12,18 +12,18 @@ pipeline{
       {
          steps
          {
-   pip install -r requirements.txt
+  sh  pip install -r requirements.txt
             }}
    stage('Test')
       {
          steps{
-    python -m test
+    sh python -m test
          } }
    stage('Notification')
       {
          steps
          {
-      echo 'This is some notification step'
+     sh  echo 'This is some notification step'
          } }
    }
 }
