@@ -26,5 +26,8 @@ def msql():
         value.append(str(row.num))
     return render_template('testpage.html',value="Value1",title="MSQL",listval=value)
 #    return val
+@app.route('/test')
+def test():
+    return 'Test pages for build'
 if __name__=="__main__":
    app.run(debug='true')
